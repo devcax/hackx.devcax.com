@@ -5,7 +5,7 @@ const Team = require('../models/Team');
 // GET all teams
 router.get('/', async (req, res) => {
   try {
-    const teams = await Team.find().select('teamName captain.name captain.email createdAt members.name members.email');
+    const teams = await Team.find().select('teamName captain.name captain.email captain.phone createdAt members.name members.email members.phone');
     res.status(200).json(teams);
   } catch (error) {
     res.status(500).json({ message: 'Error fetching teams', error: error.message });
