@@ -1099,13 +1099,13 @@ const AdminPortal = () => {
                             Team Name
                           </TableCell>
                           <TableCell sx={{ color: 'text.disabled', fontWeight: 600, fontSize: 13 }}>
-                            Captain Name
+                            Leader Name
                           </TableCell>
                           <TableCell sx={{ color: 'text.disabled', fontWeight: 600, fontSize: 13 }}>
-                            Captain Email
+                            Leader Email
                           </TableCell>
                           <TableCell sx={{ color: 'text.disabled', fontWeight: 600, fontSize: 13 }}>
-                            Captain Phone
+                            Leader Phone
                           </TableCell>
                           <TableCell align="right" sx={{ color: 'text.disabled', fontWeight: 600, fontSize: 13 }}>
                             Actions
