@@ -21,7 +21,7 @@ import {
   LinkedIn as LinkedInIcon,
   Send as SendIcon,
   Email as EmailIcon,
-  FaceBook as FaceBookIcon,
+  Facebook as FaceBookIcon,
   YouTube as YoutubeIcon
 } from '@mui/icons-material';
 import { FaTiktok } from 'react-icons/fa';
