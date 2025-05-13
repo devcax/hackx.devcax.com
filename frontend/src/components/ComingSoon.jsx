@@ -20,8 +20,11 @@ import {
   Instagram as InstagramIcon,
   LinkedIn as LinkedInIcon,
   Send as SendIcon,
-  Email as EmailIcon
+  Email as EmailIcon,
+  FaceBook as FaceBookIcon,
+  YouTube as YoutubeIcon
 } from '@mui/icons-material';
+import { FaTiktok } from 'react-icons/fa';
 
 const ComingSoon = ({ launchDate = new Date('2026-12-31'), title = "HackXLk" }) => {
   const theme = useTheme();
@@ -235,16 +238,20 @@ const ComingSoon = ({ launchDate = new Date('2026-12-31'), title = "HackXLk" }) 
             >
               Follow us on social media for updates
             </Typography>
-            <Box sx={{ display: 'flex', justifyContent: 'center', gap: 2 }}>
+              <Box sx={{ display: 'flex', justifyContent: 'center', gap: 2 }}>
               {[
-                { icon: <TwitterIcon />, label: 'Twitter' },
-                { icon: <GitHubIcon />, label: 'GitHub' },
-                { icon: <InstagramIcon />, label: 'Instagram' },
-                { icon: <LinkedInIcon />, label: 'LinkedIn' }
+                { icon: <FaceBookIcon />, label: 'Facebook', href: 'https://facebook.com' },
+                { icon: <InstagramIcon />, label: 'Instagram', href: 'https://instagram.com' },
+                { icon: <YouTubeIcon />, label: 'YouTube', href: 'https://youtube.com' },
+                { icon: <FaTiktok size={24} />, label: 'TikTok', href: 'https://tiktok.com' },
               ].map((social, index) => (
                 <IconButton
                   key={index}
                   aria-label={social.label}
+                  component="a"
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   sx={{
                     color: '#64748b',
                     transition: 'all 0.3s ease',
